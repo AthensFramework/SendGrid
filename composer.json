@@ -1,0 +1,18 @@
+{
+  "name": "athens/sendgrid",
+  "description": "SendGrid email sending wrapper for the Athens framework.",
+  "license": "MIT",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "require": {
+    "sendgrid/sendgrid": "~4.0",
+    "propel/propel": "~2.0@dev",
+    "uwdoem/framework": "0.*"
+  },
+  "require-dev": {
+    "uwdoem/standard": "*"
+  }
+}
