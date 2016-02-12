@@ -44,7 +44,6 @@ class Emailer extends AbstractEmailer
      */
     protected function doSend($body, EmailInterface $email)
     {
-
         /** @var SendGridEmail $sendgridEmail */
         $sendgridEmail = new SendGridEmail();
 
