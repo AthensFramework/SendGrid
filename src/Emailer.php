@@ -50,6 +50,7 @@ class Emailer extends AbstractEmailer
 
         $sendgridEmail
             ->addTo($email->getTo())
+            ->setFrom($email->getFrom())
             ->setSubject($email->getSubject())
             ->addCc($email->getCc())
             ->setBcc($email->getBcc())
