@@ -7,12 +7,20 @@
       "src/"
     ]
   },
+  "autoload-dev": {
+    "classmap": [
+      "test/"
+    ]
+  },
   "require": {
     "sendgrid/sendgrid": "~4.0",
     "propel/propel": "~2.0@dev",
     "uwdoem/framework": "0.*"
   },
   "require-dev": {
+    "phpdocumentor/phpdocumentor": "2.7.*",
+    "phpunit/phpunit": "4.5.*",
+    "codeclimate/php-test-reporter": "dev-master",
     "uwdoem/standard": "*"
   }
 }
