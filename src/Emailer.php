@@ -21,6 +21,8 @@ class Emailer extends AbstractEmailer
     protected static $sendgrid;
 
     /**
+     * Get the active SendGrid connection.
+     * 
      * @return SendGrid
      * @throws \Exception If SENDGRID_API_KEY has not been declared.
      */
