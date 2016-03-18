@@ -15,7 +15,7 @@
   "require": {
     "sendgrid/sendgrid": "~4.0",
     "propel/propel": "~2.0@dev",
-    "uwdoem/framework": "0.*"
+    "athens/core": "0.*"
   },
   "require-dev": {
     "phpdocumentor/phpdocumentor": "2.7.*",

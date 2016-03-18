@@ -5,8 +5,8 @@ namespace UWDOEM\Encryption\Test;
 use Athens\SendGrid\Test\Mock\MockEmailer;
 
 use Athens\SendGrid\Test\Mock\MockSendGrid;
-use UWDOEM\Framework\Email\EmailBuilder;
-use UWDOEM\Framework\Email\EmailInterface;
+use Athens\Core\Email\EmailBuilder;
+use Athens\Core\Email\EmailInterface;
 
 use PHPUnit_Framework_TestCase;
 

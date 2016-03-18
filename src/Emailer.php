@@ -2,8 +2,8 @@
 
 namespace Athens\SendGrid;
 
-use UWDOEM\Framework\Emailer\AbstractEmailer;
-use UWDOEM\Framework\Email\EmailInterface;
+use Athens\Core\Emailer\AbstractEmailer;
+use Athens\Core\Email\EmailInterface;
 
 use SendGrid;
 use SendGrid\Response;
