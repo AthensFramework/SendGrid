@@ -1,6 +1,6 @@
 <?php
 
-namespace UWDOEM\Encryption\Test;
+namespace Athens\SendGrid\Test;
 
 use Athens\SendGrid\Test\Mock\MockEmailer;
 
@@ -13,7 +13,7 @@ use PHPUnit_Framework_TestCase;
 /**
  * Class EmailerTest
  *
- * @package UWDOEM\Encryption\Test
+ * @package Athens\SendGrid\Test
  */
 class EmailerTest extends PHPUnit_Framework_TestCase
 {

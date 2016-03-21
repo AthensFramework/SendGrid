@@ -36,13 +36,13 @@ Now define your default emailer in `setup.php`:
 
 ```
 ...
-use UWDOEM\Framework\Etc\Settings;
+use Athens\Core\Etc\Settings;
 ...
 Settings::setDefaultEmailerClass('Athens\SendGrid\Emailer');
 ...
 ```
 
-That's it! If you provided the correct API key, you're now sending your emails with SendGrid! Check your SendGrid dashboard to confirm.
+That's it! If you provided the correct API key, your Athens emails are now being sent with SendGrid! Check your SendGrid dashboard to confirm.
 
 Getting Involved
 ----------------

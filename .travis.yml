@@ -11,6 +11,6 @@ before_script:
   - composer install
 script:
   - phpunit --configuration test/phpunit.xml test
-  - ./vendor/bin/phpcs --standard=./vendor/uwdoem/standard/ruleset.xml src test
+  - ./vendor/bin/phpcs --standard=./vendor/athens/standard/ruleset.xml src test
 after_script:
   - vendor/bin/test-reporter
