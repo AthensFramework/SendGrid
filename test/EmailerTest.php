@@ -8,6 +8,8 @@ use Athens\SendGrid\Test\Mock\MockSendGrid;
 use Athens\Core\Email\EmailBuilder;
 use Athens\Core\Email\EmailInterface;
 
+use Athens\Core\Writer\EmailWriter;
+
 use PHPUnit_Framework_TestCase;
 
 /**
@@ -46,7 +48,7 @@ class EmailerTest extends PHPUnit_Framework_TestCase
 
         $email = $this->makeEmail();
 
-        $emailer = new MockEmailer();
+        $emailer = new MockEmailer([new EmailWriter()]);
 
         $emailer->send($email);
     }
@@ -67,12 +69,11 @@ class EmailerTest extends PHPUnit_Framework_TestCase
 
         $email = $this->makeEmail();
 
-        $emailer = new MockEmailer();
+        $emailer = new MockEmailer([new EmailWriter()]);
 
         $result = $emailer->send($email);
 
         $this->assertTrue($result);
-
     }
 
     /**
@@ -91,7 +92,7 @@ class EmailerTest extends PHPUnit_Framework_TestCase
 
         $email = $this->makeEmail();
 
-        $emailer = new MockEmailer();
+        $emailer = new MockEmailer([new EmailWriter()]);
 
         $result = $emailer->send($email);
 

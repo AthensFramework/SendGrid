@@ -49,12 +49,26 @@ class Emailer extends AbstractEmailer
         /** @var SendGridEmail $sendgridEmail */
         $sendgridEmail = new SendGridEmail();
 
+        foreach (explode(';', $email->getTo()) as $to) {
+            $sendgridEmail->addTo(trim($to));
+        }
+
+        foreach (explode(';', $email->getCc()) as $cc) {
+            $sendgridEmail->addCc(trim($cc));
+        }
+
+        foreach (explode(';', $email->getBcc()) as $bcc) {
+            $sendgridEmail->addBcc(trim($bcc));
+        }
+
+        if (((string)$email->getReplyTo()) !== "") {
+            $sendgridEmail->setReplyTo($email->getReplyTo());
+        }
+        
         $sendgridEmail
-            ->addTo($email->getTo())
+            ->setReplyTo($email->getReplyTo())
             ->setFrom($email->getFrom())
             ->setSubject($email->getSubject())
-            ->addCc($email->getCc())
-            ->setBcc($email->getBcc())
             ->setHtml($body);
 
         /** @var Response $res */
